@@ -1,6 +1,8 @@
 <template>
   <div class='Welcome-Page'>
     <h1>{{ heading }}</h1>
+    <!-- <li v-for='image in images'>{{image}}</li> -->
+    <img v-for='(images, index) in images' :src="images" :key="index" />
   </div>
 </template>
 <script>
@@ -11,11 +13,18 @@ export default {
   name: 'WelcomePage',
   data() {
     return {
-      heading: 'Final Countdown'
+      heading: 'Final Countdown',
+      images: []
+    }
+  },
+  methods: {
+    setImages: async function() {
+      let allImages = await getGalleries();
+      this.images = allImages;
     }
   }, 
   created: function() {
-    getGalleries()
+    this.setImages();
   }
 }
 </script>
