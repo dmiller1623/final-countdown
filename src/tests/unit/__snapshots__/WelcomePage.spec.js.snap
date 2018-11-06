@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageCard should do this 1`] = `
+<div id="Welcome-Page">
+  <h1 id="heading">Rembrandt Gallery</h1>
+</div>
+`;
