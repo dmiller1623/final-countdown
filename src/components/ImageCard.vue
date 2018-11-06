@@ -18,7 +18,7 @@ export default {
   name: 'ImageCard',
   props: {
     images: {
-      type: Object
+      type: Array
     }
   },
   data() {
@@ -41,9 +41,8 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    /* max-width: 30rem; */
-    /* max-height: 30rem; */
   }
+
   img {
     cursor: pointer;
     max-width: 40rem;
