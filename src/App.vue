@@ -24,8 +24,11 @@ export default {
   text-align: center;
   height: 100vh;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
   display: flex;
+  background-image: url('https://cdn.hipwallpaper.com/i/1/70/7svOqw.jpg');
+  background-size: cover;
   flex-direction: column;
 }
 </style>

@@ -47,10 +47,10 @@ export default {
   #Welcome-Page {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100vh;
     overflow: scroll;
     width:  100%;
-    background-color: aqua;
   }
 </style>
 
