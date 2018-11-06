@@ -1,17 +1,7 @@
 <template>
   <div id='Welcome-Page'>
-    <h1>{{ heading }}</h1>
-    <ImageCard :images="images[0]"></ImageCard>
-    <ImageCard :images="images[1]"></ImageCard>
-    <ImageCard :images="images[2]"></ImageCard>
-    <ImageCard :images="images[3]"></ImageCard>
-    <ImageCard :images="images[4]"></ImageCard>
-    <ImageCard :images="images[5]"></ImageCard>
-    <ImageCard :images="images[6]"></ImageCard>
-    <ImageCard :images="images[7]"></ImageCard>
-    <ImageCard :images="images[8]"></ImageCard>
-    <ImageCard :images="images[9]"></ImageCard>
-    <!-- <img v-for='(images, index) in images' :src="images" :key="index" /> -->
+    <h1 id='heading'>{{ heading }}</h1>
+    <ImageCard v-for="(image, index) in images" :key="index" :images="images[index]"></ImageCard>
   </div>
 </template>
 
@@ -27,7 +17,7 @@ export default {
   },
   data() {
     return {
-      heading: 'Final Countdown',
+      heading: 'Rembrandt Gallery',
       images: []
     }
   },
@@ -51,6 +41,10 @@ export default {
     height: 100vh;
     overflow: scroll;
     width:  100%;
+  }
+
+  #heading {
+    font-size: 4rem;
   }
 </style>
 
