@@ -6,6 +6,7 @@ export const getGalleries = async () => {
   const galleries = await response.json();
   let slicedGalleries = galleries.records.slice(4, 14)
   slicedGalleries.forEach(resource => {
+    console.log(resource)
     resource.images.forEach(image => {
       images.push(image.baseimageurl)
     })

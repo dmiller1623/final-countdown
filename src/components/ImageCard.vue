@@ -1,9 +1,9 @@
 <template>
-  <div v-if="clicked" id='ImageCard'>
-    <img v-for='(images, index) in images' :src="images" :key="index" v-on:click="toggleCard"/>
-  </div>
-  <div v-else>
+  <div v-if="clicked" v-on:click="toggleCard">
     <h1>suppp</h1>
+  </div>
+  <div v-else id='ImageCard'>
+    <img :src="images" :key="index" v-on:click="toggleCard"/>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     toggleCard: function() {
-      console.log('hey')
+      this.clicked = !this.clicked
     }
   }
 }

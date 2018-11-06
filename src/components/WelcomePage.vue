@@ -1,7 +1,16 @@
 <template>
   <div id='Welcome-Page'>
     <h1>{{ heading }}</h1>
-    <ImageCard :images="images"></ImageCard>
+    <ImageCard :images="images[0]"></ImageCard>
+    <ImageCard :images="images[1]"></ImageCard>
+    <ImageCard :images="images[2]"></ImageCard>
+    <ImageCard :images="images[3]"></ImageCard>
+    <ImageCard :images="images[4]"></ImageCard>
+    <ImageCard :images="images[5]"></ImageCard>
+    <ImageCard :images="images[6]"></ImageCard>
+    <ImageCard :images="images[7]"></ImageCard>
+    <ImageCard :images="images[8]"></ImageCard>
+    <ImageCard :images="images[9]"></ImageCard>
     <!-- <img v-for='(images, index) in images' :src="images" :key="index" /> -->
   </div>
 </template>
