@@ -1,9 +1,9 @@
 import { mount } from '@vue/test-utils';
-import ImageCard  from '../components/ImageCard';
+import WelcomePage  from '../../components/WelcomePage';
 
 describe('ImageCard', () => {
   it('should do this', () => {
-    const wrapper = mount(ImageCard)
+    const wrapper = mount(WelcomePage)
     expect(wrapper).toMatchSnapshot()
   })
 })
