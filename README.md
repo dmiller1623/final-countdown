@@ -14,5 +14,6 @@ This was the first time I have used Vue as a framework
 
 ## Screenshots
 
+<img src="/images/screenshot.png"/>
 
 
