@@ -1,29 +1,18 @@
 # final-countdown
 
-## Project setup
-```
-npm install
-```
+## Description 
+For the last project using the Harvard Museum Api I chose to make an art gallery displaying some of Rembrandts paintings.
+This was the first time I have used Vue as a framework
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Set up 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+* clone down this repo https://github.com/dmiller1623/final-countdown
 
-### Run your tests
-```
-npm run test
-```
+* npm install
 
-### Lints and fixes files
-```
-npm run lint
-```
+* npm run serve
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Screenshots
+
+
+
